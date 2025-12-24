@@ -1,6 +1,27 @@
 {
   "name": "fheauction",
   "version": "1.0.0",
+  "description": "FHEVM Powered Encrypted Auction System",
   "private": true,
-  "description": "FHEVM Powered Encrypted Auction System"
+  "workspaces": [
+    "smart-contracts",
+    "web-app"
+  ],
+  "scripts": {
+    "dev": "cd web-app && npm run dev",
+    "build": "cd web-app && npm run build",
+    "start": "cd web-app && npm run start",
+    "deploy:contracts": "cd smart-contracts && npm run deploy:sepolia",
+    "lint": "cd web-app && npm run lint"
+  },
+  "keywords": [
+    "FHEVM",
+    "Encryption",
+    "Auction",
+    "Web3",
+    "Solidity",
+    "Next.js"
+  ],
+  "author": "FHEAuction",
+  "license": "MIT"
 }
